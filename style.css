@@ -1,0 +1,137 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: content-box;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+header {
+  position: relative;
+  background: black;
+  padding-bottom: 35px;
+  border-radius: 0px 0px 20px 20px;
+}
+.title-page {
+  padding: 20px;
+  color: white;
+}
+ul {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.type-shoes {
+  white-space: nowrap;
+  margin: 10px 20px;
+  color: #363739;
+  font-size: 28px;
+  font-weight: bold;
+}
+.type-shoes:nth-child(1) {
+  color: white;
+}
+.recommend {
+  padding-bottom: 15px;
+  /* padding: 15px 0px; */
+  position: absolute;
+  display: flex;
+  overflow-y: scroll;
+  height: 50vh;
+  /* background: red; */
+  background: transparent;
+  /* bottom: -350px; */
+  bottom: calc(-50vh + 20px);
+  width: 100%;
+}
+.recommend-card {
+  /* flex: 1; */
+  /* width: 500px; */
+  min-width: 85vw;
+  max-width: 85vw;
+  /* height: ; */
+  margin: auto auto;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  background: white;
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 0px 10px;
+}
+
+.favorite {
+  float: right;
+  font-size: 28px;
+  color: #727273;
+}
+.card-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.card-shoes-description {
+  color: #727273;
+  font-weight: bold;
+}
+.price-and-color {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  align-items: center;
+}
+.card-price {
+  font-size: 28px;
+  font-weight: bold;
+}
+.buy-now {
+  padding: 10px 15px;
+  background: black;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+.title-categorie-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  align-items: center;
+}
+.categorie-group {
+  /* padding: 15px; */
+  display: flex;
+  overflow-y: scroll;
+  padding-bottom: 15px;
+  background: transparent;
+}
+.categorie-group-item {
+  margin: 10px;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  position: fixed;
+  bottom: 18px;
+  padding: 22px 10px;
+  width: 85%;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 20px;
+}
